@@ -1,0 +1,185 @@
+.menu {
+    overflow-x: scroll;
+    background-color: #f72a31;
+    width: 100vw;
+    height: 100%;
+}
+
+.menu .menuwrapper {
+    width: max-content;
+    padding: 1rem;
+}
+
+.menu .menuwrapper .menubox {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 360px;
+    background-color: white;
+    border-radius: 10px;
+    height: 360px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper {
+    padding: 1rem;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 144px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper img {
+    text-align: center;
+    height: 144px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .description {
+    font-size: 0.8vw;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .add {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .add button {
+    background-color: #f72a31;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.maincart {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 58rem;
+}
+
+.maincartwrapper {
+    border-radius: 5px;
+    border: 5px #f72a31 solid;
+}
+
+.maincartwrapper .title {
+    padding: 1rem;
+    background-color: #f72a31;
+    text-align: center;
+    color: white;
+}
+
+.maincartwrapper .orderbox {
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+.maincartwrapper .orderbox .left {
+    float: left;
+}
+
+.maincartwrapper .orderbox .right {
+    float: right;
+}
+
+.maincartwrapper .orderbox .right .adjustitem {
+    margin-top: 1rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem a {
+    color: white;
+}
+
+.maincartwrapper .orderbox .right .adjustitem button {
+    color: white;
+    border-radius: 5px;
+    background-color: #f72a31;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem button:hover {
+    color: rgba(220, 220, 220, 0.9);
+}
+
+.maincartwrapper .orderbox .right .adjustitem button:active {
+    background-color: rgba(247, 42, 49, 0.9);
+    color: rgba(220, 220, 220, 0.8);
+}
+
+.maincartwrapper .orderbox .right .adjustitem .qty {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem .remove {
+    margin-left: 1rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem .remove a {
+    color: white;
+}
+
+.maincartwrapper .orderbox .image {  
+    display: inline-block;
+    max-height: 144px;
+    max-width: 144px;
+    margin-right: 2.5rem;
+}
+
+.maincartwrapper .orderbox .image img {
+    border: 3px #f72a31 solid;
+    border-radius: 10px;   
+    width: 144px;
+    height: 144px;
+}
+
+.maincartwrapper .orderbox .description {
+    line-height: 2.5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.checkout {
+    background-color: rgb(230, 230, 230);
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.checkout .checkoutwrapper {
+    color: black;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.checkout .checkoutwrapper .left {
+    float: left;
+}
+
+.checkout .checkoutwrapper .right {
+    float: right;
+}
+
+.checkout .checkoutbutton {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout .checkoutbutton button {
+    background-color: #f72a31;
+    border-radius: 10px;
+    width: 75%;
+    padding: 0.5rem;
+}
+
+.checkout .checkoutbutton button:active {
+    background-color: rgba(247, 42, 49, 0.9);
+    color: rgba(220, 220, 220, 0.8);
+}
