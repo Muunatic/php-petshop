@@ -1,0 +1,26 @@
+.checkout {
+    border-radius: 10px;
+    border: #f72a31 solid 3px;
+    width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.checkout .wrapper {
+    color: white;
+}
+
+.checkout .wrapper .title {
+    padding: 1rem;
+    background-color: #f72a31;
+    text-align: center;
+}
+
+.checkout .wrapper .bill {
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}

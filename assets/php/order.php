@@ -137,9 +137,11 @@
                     </div>
                 </div>
                 <div class="checkoutbutton">
-                    <form action="checkout.php" method="post">
-                        <button name="submit" type="submit">Buy Now</button>
-                    </form>
+                    <?php
+                        echo '<form action="temp2.php?total='.$total.'" method="post">
+                            <button name="submit" type="submit">Buy Now</button>
+                        </form>';
+                    ?>
                 </div>
             </div>
 

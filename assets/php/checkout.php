@@ -53,7 +53,39 @@
             </div>
         </div>
 
-        <!-- Checkout (On Progress) -->
+        <!-- Checkout -->
+
+        <div class="checkout">
+            <div class="wrapper">
+                <div class="title">
+                    <p>Your Bill</p>
+                </div>
+                <div class="bill">
+                    <?php
+                        $conn = new mysqli("localhost", "root", "", "kocheng");
+                        $stid = $conn -> prepare("select max(id_checkout) as id_order from checkout where email=?");
+                        $stid -> bind_param("s", $_SESSION["user"]);
+                        $stid -> execute();
+                        $rsid = $stid -> get_result();
+                        $row_idorder = $rsid -> fetch_assoc();
+                        $idorder = $row_idorder["id_order"];
+
+                        $st = $conn -> prepare("select * from checkout where email=? and id_checkout=?");
+                        $st -> bind_param("si", $_SESSION["user"], $idorder);
+                        $st -> execute();
+                        $rs = $st -> get_result();
+                        while ($row = $rs -> fetch_assoc()) {
+                            echo '
+                            <p>Id Order: '.$row["id_checkout"].'</p>
+                            <p>Email: '.$row["email"].'</p>
+                            <p>Waktu order: '.$row["order_timestamp"].'</p>
+                            <p>Total belanja: Rp. '.$row["total"].'</p>
+                            ';
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
