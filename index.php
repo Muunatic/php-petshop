@@ -99,11 +99,6 @@
                         <div class="price">
                             <p>Rp. 62.900</p>
                         </div>
-                        <div class="contentbutton">
-                            <form method="POST" action="assets/php/order.php" target="_blank">
-                                <button style="background-color: #f72a31">Order</button>
-                            </form>
-                        </div>
                     </div>
                     <div class="mainbox">
                         <div class="title">
@@ -115,11 +110,6 @@
                         <div class="price">
                             <p>Rp. 154.900</p>
                         </div>
-                        <div class="contentbutton">
-                            <form method="POST" action="assets/php/order.php" target="_blank">
-                                <button style="background-color: #f72a31">Order</button>
-                            </form>
-                        </div>
                     </div>
                     <div class="mainbox">
                         <div class="title">
@@ -130,11 +120,6 @@
                         </div>
                         <div class="price">
                             <p>Rp. 9.900</p>
-                        </div>
-                        <div class="contentbutton">
-                            <form method="POST" action="assets/php/order.php" target="_blank">
-                                <button style="background-color: #f72a31">Order</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -149,215 +134,37 @@
             </div>
             <div class="main2wrapper">
                 <div class="main2grid">
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kucing1.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Persian</h5>
-                        </div>
-                        <div class="description">
-                            <p>Kucing persia adalah ras kucing domestik berbulu panjang dengan karakter wajah bulat dan moncong pendek.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 3.599.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
+                    <?php
+                        $conn = new mysqli("localhost", "root", "", "kocheng");
+                        $st = $conn -> prepare("select * from product");
+                        $st -> execute();
+                        $rs = $st -> get_result();
+                        while ($row = $rs -> fetch_assoc()) {
+                            echo '
+                            <div class="main2box">
+                                <div class="image">
+                                    <img src="assets/img/'.$row["image"].'" alt="">
+                                </div>
+                                <div class="title">
+                                    <h5>'.$row["name"].'</h5>
+                                </div>
+                                <div class="description">
+                                    <p>'.$row["description"].'</p>
+                                </div>
+                                <div class="price">
+                                    <p>'.$row["pricedot"].'</p>
+                                </div>
+                                <div class="order">
+                                    <div class="contentbutton">
+                                        <form method="POST" action="assets/php/temp_order.php?name='.$row["name"].'" target="_blank">
+                                            <button style="background-color: #f72a31">Order</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kucing2.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Himalayan</h5>
-                        </div>
-                        <div class="description">
-                            <p>Kucing himalaya atau kucing persia himalaya adalah salah satu ras kucing domestik yang merupakan hasil persilangan antara kucing persia dengan kucing siam.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 3.199.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kucing3.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Ragdoll</h5>
-                        </div>
-                        <div class="description">
-                            <p>Ragdoll adalah kucing berbadan besar, dada yang lebar, dan panggul yang besar. Bulu Ragdoll panjangnya sedang, dengan tekstur seperti bulu pada kelinci</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 3.899.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kucing4.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>British shorthair</h5>
-                        </div>
-                        <div class="description">
-                            <p>British shorthair memiliki ukuran tubuh sedang sampai dengan cukup besar dengan berat badan sekitar 4–8 kg.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 5.399.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kucing5.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>American shorthair</h5>
-                        </div>
-                        <div class="description">
-                            <p>American shorthair adalah kucing yang memiliki bulu yang pendek, tebal, padat, dan sedikit kaku, serta memiliki kaki dan cakar yang kuat.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 4.399.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/whiskaswetfood.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Whiskas wet 80g</h5>
-                        </div>
-                        <div class="description">
-                            <p>Whiskas wet food merupakan pilihan terbaik untuk jenis makanan bernutrisi yang bisa di berikan untuk peliharaan kucing kesayangan.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 9.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/whiskas.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Whiskas 1kg</h5>
-                        </div>
-                        <div class="description">
-                            <p>Kamu harus memilih sesuai dengan ras, umur, dan juga kondisi kucing. Salah satu merek cat food yang jadi pilihan tepat adalah makanan kucing Whiskas.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 62.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/royalcanin.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Royal canin 1kg</h5>
-                        </div>
-                        <div class="description">
-                            <p>Kalau untuk kucing kesayangan, pastinya kamu harus memberikan makanan bernutrisi terbaik! Royal Canin Persian Adult bisa jadi pilihan!</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 154.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/meo.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Meo creamy treats</h5>
-                        </div>
-                        <div class="description">
-                            <p>Me-o creamy treats adalah makanan kucing yang berbentuk cair dalam kemasan sachet. merupakan snack atau camilan buat kucing kesayangan anda.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 24.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main2box">
-                        <div class="image">
-                            <img src="assets/img/kandangkucing.png" alt="">
-                        </div>
-                        <div class="title">
-                            <h5>Cat cage</h5>
-                        </div>
-                        <div class="description">
-                            <p>Rumah bagi Anabul anda.</p>
-                        </div>
-                        <div class="price">
-                            <p>Rp. 159.900</p>
-                        </div>
-                        <div class="order">
-                            <div class="contentbutton">
-                                <form method="POST" action="assets/php/order.php" target="_blank">
-                                    <button style="background-color: #f72a31">Order</button>
-                                </form>
-                            </div>
-                        </div>
+                            ';
+                        }
+                    ?>
                     </div>
                 </div>
             </div>
