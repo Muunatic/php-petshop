@@ -66,17 +66,16 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id_product`, `name`, `price`, `pricedot`, `image`) VALUES
-(1, 'Whiskas 1kg', 62900, 'Rp. 62.900', 'whiskas.png'),
-(2, 'Royal canin 1kg', 154900, 'Rp. 154.900', 'royalcanin.png'),
-(3, 'Whiskas wet 80g', 9900, 'Rp. 9.900', 'whiskaswetfood.png'),
-(4, 'Meo creamy treats', 24900, 'Rp. 24.900', 'meo.png'),
-(5, 'Cat cage', 159900, 'Rp. 159.900', 'kandangkucing.png'),
-(6, 'Persian', 3599900, 'Rp. 3.599.900', 'kucing1.png'),
-(7, 'Himalayan', 3199900, 'Rp. 3.199.900', 'kucing2.png'),
-(8, 'Ragdoll', 3899900, 'Rp. 3.899.900', 'kucing3.png'),
-(9, 'British shorthair', 5399900, 'Rp. 5.399.900', 'kucing4.png'),
-(10, 'American shorthair', 4399900, 'Rp. 4.399.900', 'kucing5.png');
-
+(1, 'Persian', 3599900, 'Rp. 3.599.900', 'kucing1.png'),
+(2, 'Himalayan', 3199900, 'Rp. 3.199.900', 'kucing2.png'),
+(3, 'Ragdoll', 3899900, 'Rp. 3.899.900', 'kucing3.png'),
+(4, 'British shorthair', 5399900, 'Rp. 5.399.900', 'kucing4.png'),
+(5, 'American shorthair', 4399900, 'Rp. 4.399.900', 'kucing5.png'),
+(6, 'Whiskas 1kg', 62900, 'Rp. 62.900', 'whiskas.png'),
+(7, 'Royal canin 1kg', 154900, 'Rp. 154.900', 'royalcanin.png'),
+(8, 'Whiskas wet 80g', 9900, 'Rp. 9.900', 'whiskaswetfood.png'),
+(9, 'Meo creamy treats', 24900, 'Rp. 24.900', 'meo.png'),
+(10, 'Cat cage', 159900, 'Rp. 159.900', 'kandangkucing.png');
 -- --------------------------------------------------------
 
 --
@@ -145,7 +144,7 @@ ALTER TABLE `checkout`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
