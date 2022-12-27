@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
 </head>
 <body style="font-family: 'Poppins'; margin: 0; background-color: whitesmoke;">
-
     <div style="background-color: white; margin-top: 2.5rem; margin-bottom: 2.5rem; margin-right: auto; margin-left: auto; max-width: 30rem; border: solid; border-width: 1px; border-radius: 5px; box-shadow: rgba(149, 157, 165, 0.5) 0px 3px 3px;">
         <div style="margin: 1rem;">
             <p><a href="../../index.php" style="text-decoration: none;"><i class="bi bi-arrow-left"></i></a></p>
