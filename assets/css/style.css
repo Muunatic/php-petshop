@@ -3,7 +3,6 @@
 }
 
 html {
-    user-select: none;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -206,19 +205,82 @@ a:hover {
 }
 
 .main2wrapper {
+    user-select: none;
+    padding: 2.5rem;
+    background-color: #f72a31;
+}
+
+.main2reviews {
+    padding-top: auto;
+    padding-bottom: auto;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    color: white;
+}
+
+.main2reviews .profile {
+    color: white;
+}
+
+.main2reviews .profile .image {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.main2reviews .profile .image img {
+    width: 144px;
+    max-width: 144px;
+    border-radius: 100%;
+}
+
+.main2reviews .profile .title {
+    text-align: center;
+    color: white;
+}
+
+.main2reviews .description {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+.main2reviews .description .rating i {
+    margin-bottom: 0.5rem;
+    color: yellow;
+    display: inline-block;
+}
+
+.main3 {
+    margin: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.main3title {
+    margin-bottom: 2.5rem;
+    color: #fff;
+    background-color: #f72a31;
+    width: max-content;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 12px 12px 200px 12px;
+}
+
+.main3wrapper {
     padding: 2rem;
     border-radius: 12px;
     background-color: #f72a31;
 }
 
-.main2grid {
+.main3grid {
     display: grid;
     row-gap: 2rem;
     grid-template-columns: 20% 20% 20% 20% 20%;
     overflow-y: hidden;
 }
 
-.main2box {
+.main3box {
     background-color: white;
     text-align: center;
     padding: 0.5rem;
@@ -226,11 +288,11 @@ a:hover {
     margin-left: 1rem;
 }
 
-.main2box .title {
+.main3box .title {
     margin-top: 1rem;
 }
 
-.main2box .image {
+.main3box .image {
     overflow: hidden;
     text-align: center;
     height: 144px;
@@ -239,12 +301,12 @@ a:hover {
     justify-content: center;
 }
 
-.main2box .image img {
+.main3box .image img {
     text-align: center;
     height: 100%;
 }
 
-.main2box .description {
+.main3box .description {
     height: 64px;
     max-height: 144px;
     font-size: 12px;
@@ -252,13 +314,13 @@ a:hover {
     text-align: left;
 }
 
-.main2box .price {
+.main3box .price {
     margin-top: 5vh;
     margin-left: 1rem;
     text-align: left;
 }
 
-.main2box .contentbutton button {
+.main3box .contentbutton button {
     border-radius: 100px;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -270,8 +332,122 @@ a:hover {
     color: white;
 }
 
+.main4 {
+    margin: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.main4title {
+    margin-bottom: 2.5rem;
+    color: #fff;
+    background-color: #f72a31;
+    width: max-content;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 12px 12px 200px 12px;
+}
+
+.main4wrapper {
+    color: white;
+    padding: 2.5rem;
+    background-color: #f72a31;
+}
+
+.main4grid {
+    display: grid;
+    grid-template-columns: 50% 30%;
+}
+
+.main4grid .image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.main4grid .image img {
+    width: 360px;
+    max-width: 360px;
+}
+
+.main4grid .description {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.main4grid .description h1 {
+    margin-bottom: 1rem;
+}
+
+.main4grid .description p {
+    text-align: justify;
+}
+
+.main5 {
+    margin: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.main5title {
+    margin-bottom: 2.5rem;
+    color: #fff;
+    background-color: #f72a31;
+    width: max-content;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 12px 12px 200px 12px;
+}
+
+.main5wrapper {
+    color: white;
+    background-color: #f72a31;
+    padding: 2.5rem;
+}
+
+.main5grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main5grid .title {
+    margin: auto;
+}
+
+.main5grid .input {
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+
+.main5grid input {
+    outline: none;
+    border: none;
+}
+
+.main5grid textarea {
+    outline: none;
+    border: none;
+}
+
+.main5grid .submit {
+    color: rgb(39, 39, 39);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.main5grid .submit:hover {
+    background-color: whitesmoke;
+}
+
+.main5grid p {
+    text-align: left;
+}
+
 .copyright {
-    color: whitesmoke;
+    color: white;
     background: #f72a31;
     overflow: hidden;
     max-width: 100%;
@@ -282,7 +458,7 @@ a:hover {
 }
 
 .copyright i {
-    color: whitesmoke;
+    color: white;
 }
 
 .copyright p {
@@ -290,7 +466,7 @@ a:hover {
 }
 
 .copyright a {
-    color: whitesmoke;
+    color: white;
 }
 
 .copyright .copyrightleft {
@@ -306,25 +482,283 @@ a:hover {
 }
 
 .copyright .copyrightright .icon {
-    color: whitesmoke;
+    color: white;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
+/* order */
+
+.menu {
+    overflow-x: scroll;
+    background-color: #f72a31;
+    width: 100vw;
+    height: 100%;
+}
+
+.menu .menuwrapper {
+    width: max-content;
+    padding: 1rem;
+}
+
+.menu .menuwrapper .menubox {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+    width: 360px;
+    background-color: white;
+    border-radius: 10px;
+    height: 360px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper {
+    padding: 1rem;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-height: 144px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper img {
+    text-align: center;
+    height: 144px;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .description {
+    font-size: 0.8vw;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .add {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.menu .menuwrapper .menubox .boxwrapper .add button {
+    background-color: #f72a31;
+    border-radius: 10px;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.maincart {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 58rem;
+}
+
+.maincartwrapper {
+    border-radius: 5px;
+    border: 5px #f72a31 solid;
+}
+
+.maincartwrapper .title {
+    padding: 1rem;
+    background-color: #f72a31;
+    text-align: center;
+    color: white;
+}
+
+.maincartwrapper .orderbox {
+    overflow: hidden;
+    padding: 2.5rem;
+}
+
+.maincartwrapper .orderbox .left {
+    float: left;
+}
+
+.maincartwrapper .orderbox .right {
+    float: right;
+}
+
+.maincartwrapper .orderbox .right .adjustitem {
+    margin-top: 1rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem a {
+    color: white;
+}
+
+.maincartwrapper .orderbox .right .adjustitem button {
+    color: white;
+    border-radius: 5px;
+    background-color: #f72a31;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem button:hover {
+    color: rgba(220, 220, 220, 0.9);
+}
+
+.maincartwrapper .orderbox .right .adjustitem button:active {
+    background-color: rgba(247, 42, 49, 0.9);
+    color: rgba(220, 220, 220, 0.8);
+}
+
+.maincartwrapper .orderbox .right .adjustitem .qty {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem .remove {
+    margin-left: 1rem;
+}
+
+.maincartwrapper .orderbox .right .adjustitem .remove a {
+    color: white;
+}
+
+.maincartwrapper .orderbox .image {  
+    display: inline-block;
+    max-height: 144px;
+    max-width: 144px;
+    margin-right: 2.5rem;
+}
+
+.maincartwrapper .orderbox .image img {
+    border: 3px #f72a31 solid;
+    border-radius: 10px;   
+    width: 144px;
+    height: 144px;
+}
+
+.maincartwrapper .orderbox .description {
+    line-height: 2.5rem;
+    vertical-align: middle;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.checkout {
+    background-color: rgb(230, 230, 230);
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.checkout .checkoutwrapper {
+    color: black;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.checkout .checkoutwrapper .left {
+    float: left;
+}
+
+.checkout .checkoutwrapper .right {
+    float: right;
+}
+
+.checkout .checkoutbutton {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout .checkoutbutton button {
+    background-color: #f72a31;
+    border-radius: 10px;
+    width: 75%;
+    padding: 0.5rem;
+}
+
+.checkout .checkoutbutton button:active {
+    background-color: rgba(247, 42, 49, 0.9);
+    color: rgba(220, 220, 220, 0.8);
+}
+
+/* swiper */
+
+.swiper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: whitesmoke;
+}
+
+/* checkout */
+
+.pagecheckout {
+    height: 100vh;
+}
+
+.checkout {
+    border-radius: 10px;
+    border: #f72a31 solid 3px;
+    width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.checkout .wrapper {
+    color: white;
+}
+
+.checkout .wrapper .title {
+    padding: 1rem;
+    background-color: #f72a31;
+    text-align: center;
+}
+
+.checkout .wrapper .bill {
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.checkout .wrapper .bill table {
+    text-align: center;
+    margin: 1rem;
+}
+
+.checkout .wrapper .bill table th{
+    padding: 0.5rem;
+}
+
+.checkout .wrapper .bill table td{
+    padding: 0.5rem;
+}
+
+.checkout .wrapper .bill form{
+    margin-top: 3rem;
+}
+
+/* responsive */
+
 @media (max-width: 1670px) {
-    .main2box .title h5 {
+    .main3box .title h5 {
         font-size: 1vw;
     }
 
-    .main2box .price {
+    .main3box .price {
         margin-top: 5vh;
     }
 
-    .main2box .price p {
+    .main3box .price p {
         font-size: 1vw;
     }
 
-    .main2box .description {
+    .main3box .description {
         height: 64px;
         max-height: 64px;
         font-size: 0.7vw;
