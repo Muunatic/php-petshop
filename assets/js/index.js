@@ -59,8 +59,8 @@ const swiper1 = new Swiper('.swiper1', {
 let homenavbar = document.getElementById('home');
 let homenavbarfixed = document.getElementById('homefixed');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       homenavbarfixed.style.visibility = "hidden";
       homenavbarfixed.style.display = "none";
